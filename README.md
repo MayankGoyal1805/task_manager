@@ -5,7 +5,6 @@ Task Manager is a versatile application designed to manage, assign, and track th
 This project enables teams to efficiently track who is assigned to which task and monitor progress toward completion, ensuring accountability and clear oversight of group and personal responsibilities.
 
 
-
 ## 🚀 Setup and Installation
 
 Follow these steps to get the backend API and the CLI running on your local machine.
@@ -39,7 +38,7 @@ Follow these steps to get the backend API and the CLI running on your local mach
 
 4.  **Install required libraries:**
     ```bash
-    pip install Flask Flask-SQLAlchemy PyMySQL Flask-Bcrypt Flask-JWT-Extended
+    pip install -r requirements.txt
     ```
 
 5.  **Set up the database:**
@@ -78,7 +77,7 @@ Follow these steps to get the backend API and the CLI running on your local mach
     ```
 4.  **Install required libraries:**
     ```bash
-    pip install requests click
+    pip install -r requirements.txt
     ```
     You are now ready to use the CLI.
 
