@@ -4,29 +4,7 @@ Task Manager is a versatile application designed to manage, assign, and track th
 
 This project enables teams to efficiently track who is assigned to which task and monitor progress toward completion, ensuring accountability and clear oversight of group and personal responsibilities.
 
-## 🏛️ Architecture
 
-This project is built using a modern 3-tier architecture, which separates the database, the core logic (API), and the user interfaces.
-
-
-
-* **Tier 1: Database (MySQL)**: The single source of truth that stores all user and task data.
-* **Tier 2: Backend API (Python & Flask)**: The "brain" of the application. It handles all business logic, user authentication, and database communication. It's the only part of the app that can talk to the database.
-* **Tier 3: Clients (CLI & Web)**:
-    * **Python CLI**: A command-line tool that "consumes" the API, allowing for quick, text-based task management.
-    * **Web Interface (React)**: A visual, browser-based client that also consumes the same API. (Currently under development).
-
-## ✨ Features (CLI)
-
-* **Secure User Authentication**: Full user registration and login with secure password hashing (`bcrypt`) and session management (`JWT`).
-* **Full Task CRUD**:
-    * **Create** new tasks.
-    * **Read** (list) all your own tasks.
-    * **Update** a task's status, title, or description.
-    * **Delete** tasks you no longer need.
-* **Multi-User Security**: You can only see and manage the tasks that you created.
-
----
 
 ## 🚀 Setup and Installation
 
