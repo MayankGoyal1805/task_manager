@@ -1,23 +1,3 @@
-# Task Manager Frontend
-
-A modern, responsive React frontend for the Task Manager application.
-
-## Features
-
-- 🔐 User authentication (Login/Register)
-- ✅ Create, read, update, and delete tasks
-- 🏷️ Task status management (Todo, In Progress, Done)
-- 🎨 Modern UI with smooth animations
-- 📱 Fully responsive design
-- 🔄 Real-time task filtering
-
-## Tech Stack
-
-- **React 18** - UI library
-- **Vite** - Build tool and dev server
-- **React Router** - Client-side routing
-- **Axios** - HTTP client
-- **CSS3** - Styling with animations
 
 ## Setup Instructions
 
@@ -108,13 +88,6 @@ frontend/
 - Filter by status (Todo, In Progress, Done)
 - Task count badges for each filter
 
-### UI/UX
-- Gradient background design
-- Card-based task layout
-- Color-coded status indicators
-- Smooth animations and transitions
-- Responsive grid layout
-- Mobile-friendly interface
 
 ## API Integration
 
@@ -147,35 +120,3 @@ proxy: {
 }
 ```
 
-## Troubleshooting
-
-### CORS Issues
-Make sure the backend has CORS enabled for `http://localhost:5173`
-
-### Connection Refused
-Ensure the backend API is running on port 5000
-
-### Token Expired
-Logout and login again to refresh your token
-
-## Development
-
-### Hot Module Replacement (HMR)
-Vite provides instant HMR - changes are reflected immediately without full page reload.
-
-### Code Organization
-- Components are organized by feature
-- Each component has its own CSS file
-- API calls are centralized in the services layer
-- Reusable logic is extracted into custom hooks (if needed)
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## License
-
-This project is part of the Task Manager application.
