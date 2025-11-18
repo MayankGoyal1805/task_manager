@@ -9,23 +9,18 @@ from flask_jwt_extended import (
     get_jwt_identity
 )
 
-# --- Database Setup ---
 DATABASE_URI = 'mysql+pymysql://root:fantom%4090gm%28%29@127.0.0.1/task_manager'
 
-# --- App Initialization ---
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URI
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-# --- JWT Configuration ---
-# I have CHANGED this key. This will invalidate all old tokens.
 app.config["JWT_SECRET_KEY"] = "a-new-secret-key-to-force-a-reset"
-jwt = JWTManager(app)  # Initialize JWTManager
+jwt = JWTManager(app)  
 
 db = SQLAlchemy(app)
-bcrypt = Bcrypt(app)  # Initialize Bcrypt
+bcrypt = Bcrypt(app)  
 
-# --- MODELS ---
 class User(db.Model):
     __tablename__ = 'users'
     id = db.Column(db.Integer, primary_key=True)
