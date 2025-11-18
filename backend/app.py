@@ -8,16 +8,19 @@ from flask_jwt_extended import (
     jwt_required,
     get_jwt_identity
 )
+from flask_cors import CORS
+
 
 DATABASE_URI = 'mysql+pymysql://root:fantom%4090gm%28%29@127.0.0.1/task_manager'
 
 app = Flask(__name__)
+CORS(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URI
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 app.config["JWT_SECRET_KEY"] = "a-new-secret-key-to-force-a-reset"
-jwt = JWTManager(app)  
 
+jwt = JWTManager(app)  
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)  
 
